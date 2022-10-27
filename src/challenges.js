@@ -16,9 +16,11 @@ function splitSentence(text) {
   return text.split('');
 }
 
-// Desafio 4
-function concatName() {
-  // seu código aqui
+// Desafio 4 (Crie uma função que use concatenação de strings)
+function concatName(stringText) {
+  let firstText = stringText[0];
+  let lastText = stringText.pop();
+  return `${lastText}, ${firstText}`;
 }
 
 // Desafio 5
