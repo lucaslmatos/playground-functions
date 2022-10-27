@@ -59,6 +59,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8 (Crie uma função FizzBuzz)
+// eslint-disable-next-line complexity
 function fizzBuzz(numberArray) {
   let stringArray = [];
   for (let index = 0; index < numberArray.length; index += 1) {
@@ -66,9 +67,9 @@ function fizzBuzz(numberArray) {
     let check5 = numberArray[index] % 5;
     if (check3 === 0 && check5 === 0) {
       stringArray[index] = 'fizzBuzz';
-    } if (check3 !== 0 && check5 === 0){
+    } if (check3 !== 0 && check5 === 0) {
       stringArray[index] = 'buzz';
-    } if (check3 === 0 && check5 !== 0){
+    } if (check3 === 0 && check5 !== 0) {
       stringArray[index] = 'fizz';
     } if (check3 !== 0 && check5 !== 0) {
       stringArray[index] = 'bug!';
@@ -116,7 +117,6 @@ function techList(tecName, personName) {
   }
   return tecName;
 }
-
 
 module.exports = {
   calcArea,
