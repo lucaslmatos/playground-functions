@@ -26,8 +26,14 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13 (Crie uma função de boas vindas ao Bar da Trybe!)
-function hydrate() {
-  // seu código aqui
+function hydrate(text) {
+  let r = /\d+/g;
+  let matches = text.match(r);
+  let soma = 0;
+  for (let index = 0; index < matches.length; index += 1) {
+    soma += parseInt(matches[index], 0);
+  } if (soma === 1) return (`${soma} copo de água`);
+  return (`${soma} copos de água`);
 }
 
 module.exports = {
