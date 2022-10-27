@@ -23,9 +23,9 @@ function concatName(stringText) {
   return `${lastText}, ${firstText}`;
 }
 
-// Desafio 5
-function footballPoints() {
-  // seu código aqui
+// Desafio 5 (Crie uma função que calcula a quantidade de pontos em um campeonato de futebol)
+function footballPoints(wins, ties) {
+  return (wins * 3) + (ties);
 }
 
 // Desafio 6
