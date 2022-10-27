@@ -61,16 +61,16 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8 (Crie uma função FizzBuzz)
 function fizzBuzz(numberArray) {
   let stringArray = [];
-  for (let index = 0; index <= numberArray.length; index += 1) {
+  for (let index = 0; index < numberArray.length; index += 1) {
     let check3 = numberArray[index] % 3;
     let check5 = numberArray[index] % 5;
     if (check3 === 0 && check5 === 0) {
       stringArray[index] = 'fizzBuzz';
-    } else if (check3 !== 0 && check5 === 0){
+    } if (check3 !== 0 && check5 === 0){
       stringArray[index] = 'buzz';
-    } else if (check3 === 0 && check5 !== 0){
+    } if (check3 === 0 && check5 !== 0){
       stringArray[index] = 'fizz';
-    } else {
+    } if (check3 !== 0 && check5 !== 0) {
       stringArray[index] = 'bug!';
     }
   }
