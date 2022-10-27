@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 começo do projeto
 function compareTrue() {
   // seu código aqui
 }
