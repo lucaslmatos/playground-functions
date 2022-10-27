@@ -13,7 +13,7 @@ function calcArea(base, heigth) {
 
 // Desafio 3 (Crie uma função que divida uma frase)
 function splitSentence(text) {
-  return text.split('');
+  return text.split(' ');
 }
 
 // Desafio 4 (Crie uma função que use concatenação de strings)
@@ -28,9 +28,19 @@ function footballPoints(wins, ties) {
   return (wins * 3) + (ties);
 }
 
-// Desafio 6
-function highestCount() {
-  // seu código aqui
+// Desafio 6 (Crie uma função que calcula o número de repetições do maior número)
+function highestCount(arrayNumber) {
+  let maiorValor = 0;
+  let contador = 0;
+  for (let index = 0; index <= arrayNumber.length; index += 1) {
+    if (arrayNumber[index] > maiorValor) {
+      maiorValor = arrayNumber[index];
+  }
+  for (let index2 = 0; index2 <= arrayNumber.length; index2 += 1) {
+    if (arrayNumber[index2] === maiorValor) {
+      contador += 1;
+  }
+  return contador;
 }
 
 // Desafio 7
