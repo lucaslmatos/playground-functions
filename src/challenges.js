@@ -102,9 +102,20 @@ function decode(text2) {
   return code;
 }
 
-// Desafio 10
-function techList() {
-  // seu código aqui
+// Desafio 10 (Crie uma função de Lista de Tecnologias)
+function techList(tecName, personName) {
+  if (tecName === null && personName === null) {
+    return 'Vazio!';
+  }
+  let object = {
+    tech: 'null',
+    name: 'null',
+  };
+  for (let index = 0; index < tecName.length; index += 1) {
+    object.tech = tecName[index];
+    object.name = personName;
+    return object;
+  }
 }
 
 module.exports = {
