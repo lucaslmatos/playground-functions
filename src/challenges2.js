@@ -17,12 +17,12 @@ function generatePhoneNumber(phoneNumber) {
   let number = `(${phoneNumber[0]}${phoneNumber[1]}) ${phoneNumber[2]}${phoneNumber[3]}${phoneNumber[4]}${phoneNumber[5]}${phoneNumber[6]}-${phoneNumber[7]}${phoneNumber[8]}${phoneNumber[9]}${phoneNumber[10]}`;
   return number;
 }
-let phoneNumbe = [12, 13, 24, 42, 6];
-console.log(phoneNumbe[1 && 2]);
 
 // Desafio 12 (Crie uma função que teste a condição de existência de um triângulo)
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA >= lineB + lineC || lineB >= lineA + lineC || lineC >= lineA + lineB) {
+    return false;
+  } return true;
 }
 
 // Desafio 13 (Crie uma função de boas vindas ao Bar da Trybe!)
