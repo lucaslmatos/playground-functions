@@ -1,6 +1,9 @@
-// Desafio 1 começo do projeto
-function compareTrue() {
-  // seu código aqui
+// Desafio 1 (Crie uma função usando o operador &&)
+function compareTrue(bool1, bool2) {
+  if (bool1 === true && bool2 === true) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 2
