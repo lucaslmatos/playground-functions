@@ -30,7 +30,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6 (Crie uma função que calcula o número de repetições do maior número)
 function highestCount(arrayNumber) {
-  let maiorValor = 0;
+  let maiorValor = -Infinity;
   let contador = 0;
   for (let index = 0; index <= arrayNumber.length; index += 1) {
     if (arrayNumber[index] > maiorValor) {
@@ -45,10 +45,16 @@ function highestCount(arrayNumber) {
   return contador;
 }
 
-
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
+// Desafio 7 (Crie uma função de Caça ao Rato)
+function catAndMouse(mouse, cat1, cat2) {
+  let distCat1 = cat1 - mouse;
+  let distCat2 = cat2 - mouse;
+  if (distCat1 > distCat2) {
+    return 'cat1';
+  } if (distCat1 < distCat2) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
