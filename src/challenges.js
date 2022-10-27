@@ -6,14 +6,14 @@ function compareTrue(bool1, bool2) {
   return false;
 }
 
-// Desafio 2
-function calcArea() {
-  // seu código aqui
+// Desafio 2 (Crie uma função que calcula a área de um triângulo)
+function calcArea(base, heigth) {
+  return (base * heigth) / 2;
 }
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Desafio 3 (Crie uma função que divida uma frase)
+function splitSentence(text) {
+  return text.split('');
 }
 
 // Desafio 4
