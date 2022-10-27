@@ -77,12 +77,29 @@ function fizzBuzz(numberArray) {
   return stringArray;
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+// Desafio 9 (Crie uma função que Codifique e Decodifique)
+function encode(text) {
+  let code = '';
+  for (let index = 0; index < text.length; index += 1) {
+    code = text.replace(/a/g, '1')
+      .replace(/e/g, '2')
+      .replace(/i/g, '3')
+      .replace(/o/g, '4')
+      .replace(/u/g, '5');
+  }
+  return code;
 }
-function decode() {
-  // seu código aqui
+
+function decode(text2) {
+  let code = '';
+  for (let index = 0; index < text2.length; index += 1) {
+    code = text2.replace(/1/g, 'a')
+      .replace(/2/g, 'e')
+      .replace(/3/g, 'i')
+      .replace(/4/g, 'o')
+      .replace(/5/g, 'u');
+  }
+  return code;
 }
 
 // Desafio 10
