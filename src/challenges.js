@@ -35,13 +35,16 @@ function highestCount(arrayNumber) {
   for (let index = 0; index <= arrayNumber.length; index += 1) {
     if (arrayNumber[index] > maiorValor) {
       maiorValor = arrayNumber[index];
+    }
   }
   for (let index2 = 0; index2 <= arrayNumber.length; index2 += 1) {
     if (arrayNumber[index2] === maiorValor) {
       contador += 1;
+    }
   }
   return contador;
 }
+
 
 // Desafio 7
 function catAndMouse() {
