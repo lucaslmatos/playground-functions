@@ -32,17 +32,14 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNumber) {
   let maiorValor = -Infinity;
   let contador = 0;
+  arrayNumber = arrayNumber.sort(function (a, b) { return b - a; });
   for (let index = 0; index <= arrayNumber.length; index += 1) {
     if (arrayNumber[index] > maiorValor) {
       maiorValor = arrayNumber[index];
-    }
-  }
-  for (let index2 = 0; index2 <= arrayNumber.length; index2 += 1) {
-    if (arrayNumber[index2] === maiorValor) {
+    } if (maiorValor === arrayNumber[index]) {
       contador += 1;
     }
-  }
-  return contador;
+  } return contador;
 }
 
 // Desafio 7 (Crie uma função de Caça ao Rato)
