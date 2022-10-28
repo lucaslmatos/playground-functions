@@ -30,13 +30,10 @@ function footballPoints(wins, ties) {
 
 // Desafio 6 (Crie uma função que calcula o número de repetições do maior número)
 function highestCount(arrayNumber) {
-  let maiorValor = -Infinity;
   let contador = 0;
   arrayNumber = arrayNumber.sort(function (a, b) { return b - a; });
   for (let index = 0; index <= arrayNumber.length; index += 1) {
-    if (arrayNumber[index] > maiorValor) {
-      maiorValor = arrayNumber[index];
-    } if (maiorValor === arrayNumber[index]) {
+    if (arrayNumber[0] === arrayNumber[index]) {
       contador += 1;
     }
   } return contador;
@@ -56,18 +53,18 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8 (Crie uma função FizzBuzz)
+// Pensando em uma alternativa para diminuir a complexidade cognitiva atual de 6 para o limite, que é 5.
 // eslint-disable-next-line complexity
 function fizzBuzz(numberArray) {
   let stringArray = [];
-  for (let index in numberArray) {
+  for (let index = 0; index < numberArray.length; index += 1) {
+    stringArray[index] = 'bug!';
     if (numberArray[index] % 15 === 0) {
       stringArray[index] = 'fizzBuzz';
     } else if (numberArray[index] % 5 === 0) {
       stringArray[index] = 'buzz';
     } else if (numberArray[index] % 3 === 0) {
       stringArray[index] = 'fizz';
-    } else {
-      stringArray[index] = 'bug!';
     }
   }
   return stringArray;
