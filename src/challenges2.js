@@ -14,8 +14,8 @@ function generatePhoneNumber(phoneNumber) {
       if (cont > 2) return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  let number = `(${phoneNumber[0]}${phoneNumber[1]}) ${phoneNumber[2]}${phoneNumber[3]}${phoneNumber[4]}${phoneNumber[5]}${phoneNumber[6]}-${phoneNumber[7]}${phoneNumber[8]}${phoneNumber[9]}${phoneNumber[10]}`;
-  return number;
+  let number = phoneNumber.join('');
+  return `(${number.substring(0, 2)}) ${number.substring(2, 7)}-${number.substring(7, 11)}`;
 }
 
 // Desafio 12 (Crie uma função que teste a condição de existência de um triângulo)
