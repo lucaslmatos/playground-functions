@@ -14,7 +14,7 @@
 //   let number = phoneNumber.join('');
 //   return `(${number.substring(0, 2)}) ${number.substring(2, 7)}-${number.substring(7, 11)}`;
 // Fim do Código
-// Pensando em uma alternativa para diminuir a complexidade cognitiva atual de 10 para o limite, que é 5.
+// Pensando em uma alternativa para diminuir a complexidade atual de 13 para o limite, que é 5.
 // eslint-disable-next-line complexity
 function generatePhoneNumber(phoneNumber) {
   if (phoneNumber.length !== 11) return 'Array com tamanho incorreto.';
