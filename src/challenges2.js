@@ -18,11 +18,10 @@
 // eslint-disable-next-line complexity
 function generatePhoneNumber(phoneNumber) {
   if (phoneNumber.length !== 11) return 'Array com tamanho incorreto.';
-  for (let index = 0; index < phoneNumber.length; index += 1) {
-    if (phoneNumber[index] < 0
-  || phoneNumber[index] > 9) return 'não é possível gerar um número de telefone com esses valores';
-  }
   let num = phoneNumber.join(''); phoneNumber = phoneNumber.sort(function (a, b) { return b - a; });
+  if (num.includes('-') || phoneNumber.some((el) => el > 9)) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
   if ((phoneNumber[0] === Math.sqrt(phoneNumber[1] * phoneNumber[2]))
     || (phoneNumber[1] === Math.sqrt(phoneNumber[2] * phoneNumber[3]))
     || (phoneNumber[2] === Math.sqrt(phoneNumber[3] * phoneNumber[4]))
