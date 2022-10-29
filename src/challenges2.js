@@ -4,15 +4,13 @@
 function generatePhoneNumber(phoneNumber) {
   if (phoneNumber.length !== 11) return 'Array com tamanho incorreto.';
   for (let index = 0; index < phoneNumber.length; index += 1) {
-    if (phoneNumber[index] < 0 || phoneNumber[index] > 9) {
-      return 'não é possível gerar um número de telefone com esses valores';
-    }
     let cont = 0;
     for (let index2 = 0; index2 < phoneNumber.length; index2 += 1) {
-      if (phoneNumber[index2] === phoneNumber[index]) {
+      if (phoneNumber[index] === phoneNumber[index2]) {
         cont += 1;
       }
-      if (cont > 2) return 'não é possível gerar um número de telefone com esses valores';
+    } if (phoneNumber[index] < 0 || phoneNumber[index] > 9 || cont > 2) {
+      return 'não é possível gerar um número de telefone com esses valores';
     }
   }
   let number = phoneNumber.join('');

@@ -53,7 +53,6 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8 (Crie uma função FizzBuzz)
-// Pensando em uma alternativa para diminuir a complexidade cognitiva atual de 6 para o limite, que é 5.
 // eslint-disable-next-line complexity
 function fizzBuzz(numberArray) {
   let stringArray = [];
