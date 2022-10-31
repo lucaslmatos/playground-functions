@@ -2,7 +2,7 @@
 function generatePhoneNumber(phoneNumber) {
   if (phoneNumber.length !== 11) return 'Array com tamanho incorreto.';
   let numO = phoneNumber.join('');
-  phoneNumber = phoneNumber.sort(function (a, b) { return b - a; });
+  phoneNumber = phoneNumber.sort((a, b) => b - a);
   let numE = phoneNumber.join('');
   if (numO.includes('-') || phoneNumber.some((el) => el > 9)
   || numE.match(/000|111|222|333|444|555|666|777|888|999/)) {

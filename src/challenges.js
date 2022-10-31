@@ -31,7 +31,7 @@ function footballPoints(wins, ties) {
 // Desafio 6 (Crie uma função que calcula o número de repetições do maior número)
 function highestCount(arrayNumber) {
   let contador = 0;
-  arrayNumber = arrayNumber.sort(function (a, b) { return b - a; });
+  arrayNumber = arrayNumber.sort((a, b) => b - a);
   for (let index = 0; index <= arrayNumber.length; index += 1) {
     if (arrayNumber[0] === arrayNumber[index]) {
       contador += 1;
@@ -53,7 +53,6 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8 (Crie uma função FizzBuzz)
-// eslint-disable-next-line complexity
 function fizzBuzz(numberArray) {
   let stringArray = [];
   for (let index = 0; index < numberArray.length; index += 1) {
